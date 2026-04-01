@@ -118,3 +118,4 @@ docker-compose logs frontend
 - ✅ PostgreSQL database
 - ✅ TypeScript full-stack
 # step_by_step
+# step_by_step
