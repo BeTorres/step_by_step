@@ -1,0 +1,23 @@
+{
+  "name": "predictus",
+  "version": "1.0.0",
+  "description": "Multi-step registration system with Nest.js and Next.js",
+  "private": true,
+  "engines": {
+    "node": ">=20.0.0",
+    "pnpm": ">=10.0.0"
+  },
+  "packageManager": "pnpm@10.28.1",
+  "scripts": {
+    "dev": "concurrently \"pnpm:dev:backend\" \"pnpm:dev:frontend\"",
+    "dev:backend": "pnpm -F predictus-backend start:dev",
+    "dev:frontend": "pnpm -F predictus-frontend dev",
+    "build": "pnpm --recursive run build",
+    "test": "pnpm --recursive run test",
+    "lint": "pnpm --recursive run lint",
+    "format": "pnpm --recursive run format"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
